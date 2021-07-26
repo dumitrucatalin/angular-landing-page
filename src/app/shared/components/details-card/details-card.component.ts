@@ -1,20 +1,18 @@
 import { MediaMatcher } from '@angular/cdk/layout';
 import { ChangeDetectorRef, Component, OnInit } from '@angular/core';
-import { Router } from '@angular/router';
 
 @Component({
-  selector: 'app-header',
-  templateUrl: './header.component.html',
-  styleUrls: ['./header.component.scss']
+  selector: 'app-details-card',
+  templateUrl: './details-card.component.html',
+  styleUrls: ['./details-card.component.scss']
 })
-export class HeaderComponent implements OnInit {
+export class DetailsCardComponent implements OnInit {
   mobileQuery: MediaQueryList;
   private _mobileQueryListener: () => void;
 
   constructor(
     public changeDetectorRef: ChangeDetectorRef,
     public media: MediaMatcher,
-    private router: Router
   ) { 
     this.mobileQuery = media.matchMedia('(max-width: 600px)');
     this._mobileQueryListener = () => changeDetectorRef.detectChanges();
@@ -22,18 +20,6 @@ export class HeaderComponent implements OnInit {
   }
 
   ngOnInit(): void {
-  }
-
-  routeToMain(){
-    this.router.navigate(['']);
-  }
-
-  routeToProjects(){
-    this.router.navigate(['projects']);
-  }
-
-  routeToContact(){
-    this.router.navigate(['contact']);
   }
 
   ngOnDestroy(): void {

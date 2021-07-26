@@ -1,1 +1,10 @@
-<p>header works!</p>
+<mat-toolbar color="primary" class="example-toolbar">
+    <!-- <button mat-icon-button (click)="toggleSidenav()"><mat-icon>menu</mat-icon></button> -->
+    <img calss="imgLogo" src="assets/img/header-icon.png" />
+    <!-- <p class="title">Awesome presentation</p> -->
+    <span class="example-spacer"></span>
+    <app-header-menu *ngIf="!mobileQuery.matches"></app-header-menu>
+    <!-- <button mat-button (click)="routeToMain()" *ngIf="!mobileQuery.matches">Home</button>
+    <button mat-button (click)="routeToProjects()" *ngIf="!mobileQuery.matches">Projects</button>
+    <button mat-button (click)="routeToContact()" *ngIf="!mobileQuery.matches">Contact</button> -->
+</mat-toolbar>
