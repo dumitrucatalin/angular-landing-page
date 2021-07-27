@@ -1,27 +1,99 @@
 .example-card {
-    // max-width: 400px;
-    // margin:200px; 
-    // max-width: 400px;
-    // margin: 20px;
-    align-self: center;
-    align-content: center;
-  }
-  
-  .example-header-image {
-    background-image: url('https://material.angular.io/assets/img/examples/shiba1.jpg');
-    background-size: cover;
-  }
+  // max-width: 400px;
+  // margin:200px;
+  // max-width: 400px;
+  // margin: 20px;
+  align-self: center;
+  align-content: center;
+}
 
-  img {
-    // max-width: 450px;
-  }
+.example-header-image {
+  background-image: url("https://material.angular.io/assets/img/examples/shiba1.jpg");
+  background-size: cover;
+}
 
-  .card{
-    // width: 100%;
-    // max-width: 400px;
+img {
+  // max-width: 450px;
+}
+
+.card {
+  // width: 100%;
+  // max-width: 400px;
+  // margin: 10px;
+  // align-self: center;
+  // align-content: center;
+  // text-align: center;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  align-content: space-between;
+}
+
+mat-card {
+  // background-color: rgba(0, 0, 0, 0);
+  margin: 10px;
+  align-self: center;
+  align-content: center;
+  text-align: center;
+}
+
+// h1 {
+//   // font-size: 50px;
+//   line-height: 30px;
+// }
+// h4 {
+//   // font-size: 40px;
+//   line-height: 40px;
+// }
+
+// p {
+//   // font-size: 30px;
+//   // // font-size: 1.2vmin;
+//   // text-align: left;
+//   line-height: 30px;
+// }
+
+$mqIterations: 19;
+@mixin fontResize($iterations) {
+  $i: 1;
+  @while $i <= $iterations {
+    @media all and (min-width: 100px * $i) {
+      p {
+        font-size: 0.2em * $i;
+        line-height: 0.15em * $i;
+      }
+      h1 {
+        font-size: 0.4em * $i;
+        // line-height: 0.05em * $i;
+      }
+      h4 {
+        font-size: 0.3em * $i;
+        line-height: 0.15em * $i;
+      }
+    }
+    $i: $i + 1;
   }
+}
+@include fontResize($mqIterations);
+
+.mainBox {
+  display: flex;
+}
+
+.imgContainer {
+  margin-left: 10px;
+  margin-right: 10px;
+  flex:1;
+  // height:100vh;
+}
+
+.textContainer {
+  margin-left: 10px;
+  margin-right: 10px;
+  flex:1;
+  // background-color: blue;
+}
 
 
-  .mainBox{
-      display: flex;
-  }

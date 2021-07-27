@@ -1,10 +1,33 @@
-<mat-toolbar color="primary" class="example-toolbar">
-    <!-- <button mat-icon-button (click)="toggleSidenav()"><mat-icon>menu</mat-icon></button> -->
+<!-- <mat-toolbar color="primary" class="example-toolbar">
+    <button mat-icon-button (click)="toggleSidenav()"><mat-icon>menu</mat-icon></button>
     <img calss="imgLogo" src="assets/img/header-icon.png" />
-    <!-- <p class="title">Awesome presentation</p> -->
+    <p class="title">Awesome presentation</p>
     <span class="example-spacer"></span>
-    <app-header-menu *ngIf="!mobileQuery.matches"></app-header-menu>
-    <!-- <button mat-button (click)="routeToMain()" *ngIf="!mobileQuery.matches">Home</button>
+    <app-header-menu *ngIf="mobileQuery.matches"></app-header-menu>
+    <button mat-button (click)="routeToMain()" *ngIf="!mobileQuery.matches">Home</button>
     <button mat-button (click)="routeToProjects()" *ngIf="!mobileQuery.matches">Projects</button>
-    <button mat-button (click)="routeToContact()" *ngIf="!mobileQuery.matches">Contact</button> -->
-</mat-toolbar>
+    <button mat-button (click)="routeToContact()" *ngIf="!mobileQuery.matches">Contact</button>
+</mat-toolbar> -->
+
+<mat-toolbar color="primary">
+    <!-- <button mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon">
+      <mat-icon>menu</mat-icon>
+    </button> -->
+    <img calss="imgLogo" src="assets/img/header-icon.png" />
+    <span>My App</span>
+    <span class="example-spacer"></span>
+    <!-- <button mat-icon-button class="example-icon favorite-icon" aria-label="Example icon-button with heart icon">
+      <mat-icon>favorite</mat-icon>
+    </button> -->
+    <button mat-icon-button class="example-icon" aria-label="Example icon-button with share icon">
+      <mat-icon>share</mat-icon>
+    </button>
+    <!-- <button mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon">
+        <mat-icon>menu</mat-icon>
+      </button> -->
+
+      <button mat-button (click)="routeToMain()" *ngIf="!mobileQuery.matches">Home</button>
+      <button mat-button (click)="routeToProjects()" *ngIf="!mobileQuery.matches">Projects</button>
+      <button mat-button (click)="routeToContact()" *ngIf="!mobileQuery.matches">Contact</button>
+      <app-header-menu *ngIf="mobileQuery.matches"></app-header-menu>
+  </mat-toolbar>

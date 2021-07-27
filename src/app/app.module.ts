@@ -12,6 +12,7 @@ import { ProjectsComponent } from './core/projects/projects.component';
 import { ContactComponent } from './core/contact/contact.component';
 import { DetailsCardComponent } from './shared/components/details-card/details-card.component';
 import { HeaderMenuComponent } from './core/header-menu/header-menu.component';
+import { MatFormFieldModule, MAT_FORM_FIELD_DEFAULT_OPTIONS } from '@angular/material/form-field';
 
 
 @NgModule({
@@ -29,9 +30,12 @@ import { HeaderMenuComponent } from './core/header-menu/header-menu.component';
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    MaterialModule
+    MaterialModule,
+    MatFormFieldModule
   ],
-  providers: [],
+  providers: [
+    { provide: MAT_FORM_FIELD_DEFAULT_OPTIONS, useValue: { appearance: 'fill' } },
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
