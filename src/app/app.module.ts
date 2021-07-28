@@ -13,6 +13,8 @@ import { ContactComponent } from './core/contact/contact.component';
 import { DetailsCardComponent } from './shared/components/details-card/details-card.component';
 import { HeaderMenuComponent } from './core/header-menu/header-menu.component';
 import { MatFormFieldModule, MAT_FORM_FIELD_DEFAULT_OPTIONS } from '@angular/material/form-field';
+import { SocialMediaIconsComponent } from './shared/components/social-media-icons/social-media-icons.component';
+import { MatIconModule } from '@angular/material/icon';
 
 
 @NgModule({
@@ -24,17 +26,20 @@ import { MatFormFieldModule, MAT_FORM_FIELD_DEFAULT_OPTIONS } from '@angular/mat
     ProjectsComponent,
     ContactComponent,
     DetailsCardComponent,
-    HeaderMenuComponent
+    HeaderMenuComponent,
+    SocialMediaIconsComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
     MaterialModule,
-    MatFormFieldModule
+    MatFormFieldModule,
+    MatIconModule,
   ],
   providers: [
     { provide: MAT_FORM_FIELD_DEFAULT_OPTIONS, useValue: { appearance: 'fill' } },
+    
   ],
   bootstrap: [AppComponent]
 })

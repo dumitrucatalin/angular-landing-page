@@ -1,5 +1,4 @@
-
-img{
+img {
     max-width: 50px;
     max-height: 50px;
     padding-right: 10px;
@@ -9,19 +8,22 @@ img{
 
 .example-spacer {
     flex: 1 1 auto;
-  }
+}
 
 button {
     // background-color: #8f52e0;
     font-size: large;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
 }
 
+.logo {
+    // font-family: "Josefin Sans", sans-serif;
+    font-family: "WindSong", cursive;
+}
 
 mat-toolbar {
     // min-height: 80px;
     // background-color: #8f52e0;
     // font-size: large;
     // font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    
 }

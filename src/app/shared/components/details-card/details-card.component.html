@@ -1,69 +1,30 @@
-<!-- <div class="card">
-    <mat-card class="example-card">
-        <mat-card-header>
-            <div mat-card-avatar class="example-header-image"></div>
-            <mat-card-title>Shiba Inu</mat-card-title>
-            <mat-card-subtitle>Dog Breed</mat-card-subtitle>
-        </mat-card-header>
-        <img mat-card-image src="https://material.angular.io/assets/img/examples/shiba2.jpg" alt="Photo of a Shiba Inu">
-        <mat-card-content>
-            <p>
-                The Shiba Inu is the smallest of the six original and distinct spitz breeds of dog from Japan.
-                A small, agile dog that copes very well with mountainous terrain, the Shiba Inu was originally
-                bred for hunting.
-            </p>
-        </mat-card-content>
-        <mat-card-actions>
-            <button mat-button>LIKE</button>
-            <button mat-button>SHARE</button>
-        </mat-card-actions>
-    </mat-card>
-</div> -->
-
-
 <div class="card">
-    <mat-card class="example-card">
-        <!-- <mat-card-header> -->
-        <!-- <div mat-card-avatar class="example-header-image"></div>
-            <mat-card-title>Shiba Inu</mat-card-title>
-            <mat-card-subtitle>Dog Breed</mat-card-subtitle> -->
-        <!-- </mat-card-header> -->
-        <!-- <img mat-card-image src="https://material.angular.io/assets/img/examples/shiba2.jpg" alt="Photo of a Shiba Inu"> -->
-        <!-- <mat-card-content> -->
-        <!-- display column if mobile -->
-        <div [style.flex-direction]="mobileQuery.matches ? 'column' : 'row'" class="container">
-            <!-- <mat-card class="example-card"> -->
-            <div class="imgContainer">
-                <img mat-card-image src="https://material.angular.io/assets/img/examples/shiba2.jpg"
-                    alt="Photo of a Shiba Inu">
-            </div>
+    <div [style.flex-direction]="mobileQuery.matches ? 'column' : 'row'" class="container">
+        <div class="textContainer">
+            <p [style.fontSize]="mobileQuery.matches ? '5.5vw' : '4vw'"
+                [style.lineHeight]="mobileQuery.matches ? '3vw' : '4vw'">
+                DivEtImpera
+            </p>
 
-            <!-- </mat-card> -->
-            <!-- <mat-card class="example-card"> -->
-            <div class="textContainer">
-                <h1>
-                    DivEtImpera
-                </h1>
-                <h4>
-                    Experience is the teacher of all things
+            <p [style.fontSize]="mobileQuery.matches ? '3.5vw' : '2vw'"
+                [style.lineHeight]="mobileQuery.matches ? '1vw' : '2vw'">
+                Experience is the teacher of all things
 
-                </h4>
-                
-                <p>
-                    A dedicated company which always thrive to work on 
-                    end to end products which develop sustainable and
-                    scalable social and technical systems to create impact.
-                </p>
+            </p>
 
-            </div>
-            <!-- </mat-card> -->
+            <p [style.fontSize]="mobileQuery.matches ? '4vw' : '2vw'"
+                [style.lineHeight]="mobileQuery.matches ? '4vw' : '2.5vw'">
+                A dedicated company which always thrive to work on
+                end to end products which develop sustainable and
+                scalable social and technical systems to create impact.
+            </p>
+
         </div>
 
+        <div class="imgContainer">
+            <img mat-card-image src="assets/img/programmer.svg">
+        </div>
 
-        <!-- </mat-card-content> -->
-        <!-- <mat-card-actions>
-            <button mat-button>LIKE</button>
-            <button mat-button>SHARE</button>
-        </mat-card-actions> -->
-    </mat-card>
+    </div>
+
 </div>

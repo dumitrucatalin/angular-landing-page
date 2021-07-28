@@ -1,34 +1,10 @@
-.example-card {
-  // max-width: 400px;
-  // margin:200px;
-  // max-width: 400px;
-  // margin: 20px;
-  align-self: center;
-  align-content: center;
-}
-
-.example-header-image {
-  background-image: url("https://material.angular.io/assets/img/examples/shiba1.jpg");
-  background-size: cover;
-}
-
-img {
-  // max-width: 450px;
-}
-
-.card {
-  // width: 100%;
-  // max-width: 400px;
-  // margin: 10px;
-  // align-self: center;
-  // align-content: center;
-  // text-align: center;
-}
 
 .container {
   display: flex;
   flex-direction: row;
   align-content: space-between;
+  margin: 10px;
+  // font-family: 'Josefin Sans', sans-serif; 
 }
 
 mat-card {
@@ -39,61 +15,62 @@ mat-card {
   text-align: center;
 }
 
-// h1 {
-//   // font-size: 50px;
-//   line-height: 30px;
-// }
-// h4 {
-//   // font-size: 40px;
-//   line-height: 40px;
-// }
-
-// p {
-//   // font-size: 30px;
-//   // // font-size: 1.2vmin;
-//   // text-align: left;
-//   line-height: 30px;
-// }
-
-$mqIterations: 19;
-@mixin fontResize($iterations) {
-  $i: 1;
-  @while $i <= $iterations {
-    @media all and (min-width: 100px * $i) {
-      p {
-        font-size: 0.2em * $i;
-        line-height: 0.15em * $i;
-      }
-      h1 {
-        font-size: 0.4em * $i;
-        // line-height: 0.05em * $i;
-      }
-      h4 {
-        font-size: 0.3em * $i;
-        line-height: 0.15em * $i;
-      }
-    }
-    $i: $i + 1;
-  }
+p {
+  font-size: 3vw;
+  line-height: 3vw;
+  font-weight: bold;
 }
-@include fontResize($mqIterations);
+
+// $mqIterations: 19;
+// @mixin fontResize($iterations) {
+//   $i: 1;
+//   @while $i <= $iterations {
+//     @media all and (min-width: 100px * $i) {
+//       p {
+//         font-size: 0.2em * $i;
+//         line-height: 0.15em * $i;
+//       }
+//       h1 {
+//         font-size: 0.4em * $i;
+//         // line-height: 0.05em * $i;
+//       }
+//       h4 {
+//         font-size: 0.3em * $i;
+//         line-height: 0.15em * $i;
+//       }
+//     }
+//     $i: $i + 1;
+//   }
+// }
+// @include fontResize($mqIterations);
 
 .mainBox {
   display: flex;
 }
 
 .imgContainer {
-  margin-left: 10px;
-  margin-right: 10px;
-  flex:1;
-  // height:100vh;
+  // background-color: brown;
+  margin-left: 20px;
+  margin-right: 20px;
+  flex: 1;
+}
+
+.imgContainer img {
+  // max-width: 70vw;
+  // max-height: 70vw;
+  width: 100%;  /* Or whatever */
+  height: 100%; /* Or whatever */
+  margin: auto;  /* Magic! */
+  // height: auto;
 }
 
 .textContainer {
-  margin-left: 10px;
-  margin-right: 10px;
-  flex:1;
+  // width: fit-content;
+  // height: fit-content;
+  margin-top: 10px;
+  margin-left: 20px;
+  margin-right: 20px;
+  flex: 1;
   // background-color: blue;
 }
-
 
