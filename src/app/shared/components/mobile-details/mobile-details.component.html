@@ -1,0 +1,38 @@
+<div [style.flex-direction]="mobileQuery.matches ? 'column' : 'row'" class="container">
+
+    <div class="imgContainer" [@leftToRight]="state">
+        <img mat-card-image src="assets/img/fullstack.svg">
+    </div>
+
+
+    <div class="textContainer" [@rightToLeft]="state">
+        <p [style.fontSize]="mobileQuery.matches ? '5.5vw' : '3vw'"
+            [style.lineHeight]="mobileQuery.matches ? '3vw' : '3vw'">
+            Android & iOS Apps
+        </p>
+
+
+        <mat-list>
+            <mat-list-item role="listitem">
+                <p>
+                    ⚡ Developing highly scalable production ready apps for various businesses and start-ups
+                </p>
+
+            </mat-list-item>
+            <mat-list-item role="listitem">
+                <p>
+                    ⚡Experience of working with latest technology stack
+                </p>
+
+            </mat-list-item>
+            <mat-list-item role="listitem">
+                <p>
+                    ⚡ Analysis of client's needs by using business driven development
+                </p>
+
+            </mat-list-item>
+        </mat-list>
+
+    </div>
+
+</div>

@@ -3,9 +3,9 @@ import { MediaMatcher } from '@angular/cdk/layout';
 import { ChangeDetectorRef, Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-projects',
-  templateUrl: './projects.component.html',
-  styleUrls: ['./projects.component.scss'],
+  selector: 'app-project-card-list',
+  templateUrl: './project-card-list.component.html',
+  styleUrls: ['./project-card-list.component.scss'],
   animations: [
     trigger('rightToLeft', [
       state('normal', style({
@@ -58,7 +58,7 @@ import { ChangeDetectorRef, Component, OnInit } from '@angular/core';
 
   ]
 })
-export class ProjectsComponent implements OnInit {
+export class ProjectCardListComponent implements OnInit {
 
   mobileQuery: MediaQueryList;
   private _mobileQueryListener: () => void;
@@ -89,5 +89,4 @@ export class ProjectsComponent implements OnInit {
   ngOnDestroy(): void {
     this.mobileQuery.removeListener(this._mobileQueryListener);
   }
-
 }

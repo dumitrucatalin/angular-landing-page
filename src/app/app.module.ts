@@ -15,6 +15,12 @@ import { HeaderMenuComponent } from './core/header-menu/header-menu.component';
 import { MatFormFieldModule, MAT_FORM_FIELD_DEFAULT_OPTIONS } from '@angular/material/form-field';
 import { SocialMediaIconsComponent } from './shared/components/social-media-icons/social-media-icons.component';
 import { MatIconModule } from '@angular/material/icon';
+import { MobileDetailsComponent } from './shared/components/mobile-details/mobile-details.component';
+import { CloudArchitectureDetailsComponent } from './shared/components/cloud-architecture-details/cloud-architecture-details.component';
+import { ProjectsDetailsComponent } from './shared/components/projects-details/projects-details.component';
+import { ProjectCardComponent } from './shared/components/project-card/project-card.component';
+import { ProjectCardListComponent } from './shared/components/project-card-list/project-card-list.component';
+import { ContactDetailsComponent } from './shared/components/contact-details/contact-details.component';
 
 
 @NgModule({
@@ -27,7 +33,13 @@ import { MatIconModule } from '@angular/material/icon';
     ContactComponent,
     DetailsCardComponent,
     HeaderMenuComponent,
-    SocialMediaIconsComponent
+    SocialMediaIconsComponent,
+    MobileDetailsComponent,
+    CloudArchitectureDetailsComponent,
+    ProjectsDetailsComponent,
+    ProjectCardComponent,
+    ProjectCardListComponent,
+    ContactDetailsComponent
   ],
   imports: [
     BrowserModule,

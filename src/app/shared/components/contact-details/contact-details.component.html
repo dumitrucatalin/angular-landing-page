@@ -1,0 +1,24 @@
+<div class="container">
+
+    <div [style.flex-direction]="mobileQuery.matches ? 'column' : 'row'" class="container" [@scale]="state">
+        <div class="imgContainer">
+            <img mat-card-image src="assets/img/address_image.svg">
+        </div>
+
+        <div class="textContainer">
+            <p [style.fontSize]="mobileQuery.matches ? '4vw' : '3vw'"
+                [style.lineHeight]="mobileQuery.matches ? '3vw' : '4vw'">
+                Contact Us
+            </p>
+
+            <p [style.fontSize]="mobileQuery.matches ? '4vw' : '1.5vw'"
+                [style.lineHeight]="mobileQuery.matches ? '5vw' : '2vw'">
+                We are available on almost every social media. You can message us, we will reply within 24 hours. We can
+                help you with Android, iOS, Cloud and Opensource Development.
+            </p>
+
+        </div>
+
+    </div>
+
+</div>

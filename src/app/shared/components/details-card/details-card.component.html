@@ -1,30 +1,27 @@
-<div class="card">
-    <div [style.flex-direction]="mobileQuery.matches ? 'column' : 'row'" class="container">
-        <div class="textContainer">
-            <p [style.fontSize]="mobileQuery.matches ? '5.5vw' : '4vw'"
-                [style.lineHeight]="mobileQuery.matches ? '3vw' : '4vw'">
-                DivEtImpera
-            </p>
+<div [style.flex-direction]="mobileQuery.matches ? 'column' : 'row'" class="container" [@scale]="state">
+    <div class="textContainer">
+        <p [style.fontSize]="mobileQuery.matches ? '5.5vw' : '4vw'"
+            [style.lineHeight]="mobileQuery.matches ? '3vw' : '4vw'">
+            DivEtImpera
+        </p>
 
-            <p [style.fontSize]="mobileQuery.matches ? '3.5vw' : '2vw'"
-                [style.lineHeight]="mobileQuery.matches ? '1vw' : '2vw'">
-                Experience is the teacher of all things
+        <p [style.fontSize]="mobileQuery.matches ? '3.5vw' : '2vw'"
+            [style.lineHeight]="mobileQuery.matches ? '1vw' : '2vw'">
+            Experience is the teacher of all things
 
-            </p>
+        </p>
 
-            <p [style.fontSize]="mobileQuery.matches ? '4vw' : '2vw'"
-                [style.lineHeight]="mobileQuery.matches ? '4vw' : '2.5vw'">
-                A dedicated company which always thrive to work on
-                end to end products which develop sustainable and
-                scalable social and technical systems to create impact.
-            </p>
+        <p [style.fontSize]="mobileQuery.matches ? '4vw' : '2vw'"
+            [style.lineHeight]="mobileQuery.matches ? '4vw' : '2.5vw'">
+            A dedicated company which always thrive to work on
+            end to end products which develop sustainable and
+            scalable social and technical systems to create impact.
+        </p>
 
-        </div>
+    </div>
 
-        <div class="imgContainer">
-            <img mat-card-image src="assets/img/programmer.svg">
-        </div>
-
+    <div class="imgContainer">
+        <img mat-card-image src="assets/img/manOnTable.svg">
     </div>
 
 </div>

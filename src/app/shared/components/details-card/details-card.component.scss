@@ -1,19 +1,10 @@
-
 .container {
   display: flex;
   flex-direction: row;
   align-content: space-between;
-  margin: 10px;
-  // font-family: 'Josefin Sans', sans-serif; 
+  margin: 15px;
 }
 
-mat-card {
-  // background-color: rgba(0, 0, 0, 0);
-  margin: 10px;
-  align-self: center;
-  align-content: center;
-  text-align: center;
-}
 
 p {
   font-size: 3vw;
@@ -21,56 +12,26 @@ p {
   font-weight: bold;
 }
 
-// $mqIterations: 19;
-// @mixin fontResize($iterations) {
-//   $i: 1;
-//   @while $i <= $iterations {
-//     @media all and (min-width: 100px * $i) {
-//       p {
-//         font-size: 0.2em * $i;
-//         line-height: 0.15em * $i;
-//       }
-//       h1 {
-//         font-size: 0.4em * $i;
-//         // line-height: 0.05em * $i;
-//       }
-//       h4 {
-//         font-size: 0.3em * $i;
-//         line-height: 0.15em * $i;
-//       }
-//     }
-//     $i: $i + 1;
-//   }
-// }
-// @include fontResize($mqIterations);
-
 .mainBox {
   display: flex;
 }
 
 .imgContainer {
-  // background-color: brown;
   margin-left: 20px;
   margin-right: 20px;
   flex: 1;
 }
 
 .imgContainer img {
-  // max-width: 70vw;
-  // max-height: 70vw;
-  width: 100%;  /* Or whatever */
-  height: 100%; /* Or whatever */
-  margin: auto;  /* Magic! */
-  // height: auto;
+  width: 100%;
+  height: 100%;
+  margin: auto;
 }
 
 .textContainer {
-  // width: fit-content;
-  // height: fit-content;
   margin-top: 10px;
   margin-left: 20px;
   margin-right: 20px;
+  text-align: center;
   flex: 1;
-  // background-color: blue;
 }
-

@@ -1,0 +1,45 @@
+.container {
+    display: flex;
+    flex-direction: row;
+    align-content: space-between;
+    margin: 15px;
+  }
+  
+  p {
+    font-family: 'Josefin Sans', sans-serif; 
+    color: #2D3A82;
+    font-weight: bold;
+  }
+  
+  .mainBox {
+    display: flex;
+  }
+  
+  .imgContainer {
+    margin-left: 20px;
+    margin-right: 20px;
+    flex: 1;
+  }
+  
+  .imgContainer img {
+    width: 100%;
+    height: 100%;
+    margin: auto;
+  }
+  
+  .textContainer {
+    margin-top: 10px;
+    margin-left: 20px;
+    margin-right: 20px;
+    flex: 1;
+  }
+  
+
+  mat-list-item {
+    // text-decoration: #2D3A82;
+    // background-color: aqua;
+  }
+
+  .mat-list-base .mat-list-item{
+    height: auto !important;
+}

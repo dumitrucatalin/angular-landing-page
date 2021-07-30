@@ -1,0 +1,47 @@
+<div [style.flex-direction]="mobileQuery.matches ? 'column' : 'row'" class="container">
+
+    <div class="imgContainer" [@leftToRight]="state">
+        <img mat-card-image src="assets/img/cloud_infrastructure.svg">
+    </div>
+
+
+    <div class="textContainer" [@rightToLeft]="state">
+        <p [style.fontSize]="mobileQuery.matches ? '5.5vw' : '3vw'"
+            [style.lineHeight]="mobileQuery.matches ? '3vw' : '3vw'">
+            Cloud Infra-Architecture
+        </p>
+
+        <mat-list
+     
+       >
+            <mat-list-item role="listitem">
+                <p>
+                    ⚡    Experience working on multiple cloud platforms
+                </p>
+
+            </mat-list-item>
+            <mat-list-item role="listitem">
+                <p>
+                    ⚡  Hosting and maintaining websites on virtual machine instances along with integration of
+                    databases
+                </p>
+
+            </mat-list-item>
+            <mat-list-item role="listitem">
+                <p>
+                    ⚡  Deploying deep learning models on cloud to use on mobile devices
+                </p>
+            </mat-list-item>
+
+            <mat-list-item role="listitem">
+                <p>
+                    ⚡ Setting up streaming jobs from DB to Server or vice-versa on GCP and AWS
+                </p>
+            </mat-list-item>
+        </mat-list>
+
+    </div>
+
+
+
+</div>
