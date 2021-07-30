@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, NgZone, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 
 @Component({
@@ -7,6 +7,7 @@ import { Router } from '@angular/router';
   styleUrls: ['./header-menu.component.scss']
 })
 export class HeaderMenuComponent implements OnInit {
+  private zone!: NgZone
 
   constructor(
     private router: Router
@@ -15,16 +16,22 @@ export class HeaderMenuComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  routeToMain(){
-    this.router.navigate(['']);
+  routeToMain() {
+    this.zone.run(() => {
+      this.router.navigate(['']);
+    });
   }
 
-  routeToProjects(){
-    this.router.navigate(['projects']);
+  routeToProjects() {
+    this.zone.run(() => {
+      this.router.navigate(['projects']);
+    });
   }
 
-  routeToContact(){
-    this.router.navigate(['contact']);
+  routeToContact() {
+    this.zone.run(() => {
+      this.router.navigate(['contact']);
+    });
   }
 
 }
