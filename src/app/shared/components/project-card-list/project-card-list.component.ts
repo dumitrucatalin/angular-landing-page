@@ -121,29 +121,36 @@ export class ProjectCardListComponent implements OnInit {
 
   getMockedData() {
     let projectCard1 = new ProjectCardModel(
-      'https://material.angular.io/assets/img/examples/shiba2.jpg',
-      'java',
+      'assets/img/java-logo.png',
+      'Java',
       'website divetimpera',
-      'A clean, beautiful, responsive and 100% customizable portfolio template for Software'
+      'A clean, beautiful, responsive and 100% customizable portfolio template for Software',
+      'https://github.com/dumitrucatalin/angular-dashboard'
     );
 
     let projectCard2 = new ProjectCardModel(
-      'https://material.angular.io/assets/img/examples/shiba2.jpg',
-      'js',
+      'assets/img/react-logo.png',
+      'ReactJs',
       'website divetimpera',
-      'A clean, beautiful, responsive and 100% customizable portfolio template for Software'
-    );
+      'A clean, beautiful, responsive and 100% customizable portfolio template for Software',
+      "https://github.com/dumitrucatalin/angular-dashboard"
+
+      );
 
     let projectCard3 = new ProjectCardModel(
-      'https://material.angular.io/assets/img/examples/shiba2.jpg',
-      'angular',
+      'assets/img/angular-logo.png',
+      'Angular',
       'website divetimpera',
-      'A clean, beautiful, responsive and 100% customizable portfolio template for Software'
+      'A clean, beautiful, responsive and 100% customizable portfolio template for Software',
+      'https://github.com/dumitrucatalin/angular-dashboard'
     );
 
     this.projectCardArray.push(projectCard1);
     this.projectCardArray.push(projectCard2);
     this.projectCardArray.push(projectCard3);
+    // this.projectCardArray.push(projectCard1);
+    // this.projectCardArray.push(projectCard2);
+    // this.projectCardArray.push(projectCard3);
   }
 
   ngOnDestroy(): void {

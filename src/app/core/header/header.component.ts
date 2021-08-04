@@ -1,5 +1,5 @@
 import { MediaMatcher } from '@angular/cdk/layout';
-import { ChangeDetectorRef, Component, OnInit } from '@angular/core';
+import { ChangeDetectorRef, Component, NgZone, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 
 @Component({
@@ -16,7 +16,8 @@ export class HeaderComponent implements OnInit {
   constructor(
     public changeDetectorRef: ChangeDetectorRef,
     public media: MediaMatcher,
-    private router: Router
+    private router: Router,
+    private zone: NgZone
   ) {
     this.mobileQuery = media.matchMedia('(max-width: 600px)');
     this._mobileQueryListener = () => changeDetectorRef.detectChanges();
@@ -26,16 +27,22 @@ export class HeaderComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  routeToMain(){
-    this.router.navigate(['']);
+  routeToMain() {
+    this.zone.run(() => {
+      this.router.navigate(['']);
+    });
   }
 
-  routeToProjects(){
-    this.router.navigate(['projects']);
+  routeToProjects() {
+    this.zone.run(() => {
+      this.router.navigate(['projects']);
+    });
   }
 
-  routeToContact(){
-    this.router.navigate(['contact']);
+  routeToContact() {
+    this.zone.run(() => {
+      this.router.navigate(['contact']);
+    });
   }
 
   ngOnDestroy(): void {

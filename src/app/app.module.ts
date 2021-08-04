@@ -21,6 +21,7 @@ import { ProjectsDetailsComponent } from './shared/components/projects-details/p
 import { ProjectCardComponent } from './shared/components/project-card/project-card.component';
 import { ProjectCardListComponent } from './shared/components/project-card-list/project-card-list.component';
 import { ContactDetailsComponent } from './shared/components/contact-details/contact-details.component';
+import { MaterialElevationDirective } from './shared/directives/material-elevation.directive';
 
 
 @NgModule({
@@ -39,7 +40,8 @@ import { ContactDetailsComponent } from './shared/components/contact-details/con
     ProjectsDetailsComponent,
     ProjectCardComponent,
     ProjectCardListComponent,
-    ContactDetailsComponent
+    ContactDetailsComponent,
+    MaterialElevationDirective
   ],
   imports: [
     BrowserModule,
@@ -51,7 +53,7 @@ import { ContactDetailsComponent } from './shared/components/contact-details/con
   ],
   providers: [
     { provide: MAT_FORM_FIELD_DEFAULT_OPTIONS, useValue: { appearance: 'fill' } },
-    
+
   ],
   bootstrap: [AppComponent]
 })

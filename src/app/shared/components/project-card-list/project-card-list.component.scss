@@ -1,3 +1,11 @@
 .container{
     display: flex;
+    // min-height: min-content;
+}
+
+.card {
+  // flex: 1;
+  // display: flex;
+  // overflow: auto;
+  flex-shrink: 1
 }

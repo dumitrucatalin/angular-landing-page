@@ -1,6 +1,6 @@
-<div [style.flex-direction]="mobileQuery.matches ? 'column' : 'row'" class="container">
+<div [@scale]="state" [style.flex-direction]="mobileQuery.matches ? 'column' : 'row'" class="container">
 
-<div *ngFor="let project of projectCardArray">
+<div *ngFor="let project of projectCardArray" class="card">
   <app-project-card
   [projectModel]="project"
   ></app-project-card>

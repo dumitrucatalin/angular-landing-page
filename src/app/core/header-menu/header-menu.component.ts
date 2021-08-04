@@ -7,10 +7,11 @@ import { Router } from '@angular/router';
   styleUrls: ['./header-menu.component.scss']
 })
 export class HeaderMenuComponent implements OnInit {
-  private zone!: NgZone;
+
 
   constructor(
-    private router: Router
+    private router: Router,
+    private zone: NgZone
   ) { }
 
   ngOnInit(): void {
