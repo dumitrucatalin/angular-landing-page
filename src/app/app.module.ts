@@ -22,6 +22,8 @@ import { ProjectCardComponent } from './shared/components/project-card/project-c
 import { ProjectCardListComponent } from './shared/components/project-card-list/project-card-list.component';
 import { ContactDetailsComponent } from './shared/components/contact-details/contact-details.component';
 import { MaterialElevationDirective } from './shared/directives/material-elevation.directive';
+import { FlexLayoutModule } from '@angular/flex-layout';
+import { ScrollingUpButtonComponent } from './shared/components/scrolling-up-button/scrolling-up-button.component';
 
 
 @NgModule({
@@ -41,7 +43,8 @@ import { MaterialElevationDirective } from './shared/directives/material-elevati
     ProjectCardComponent,
     ProjectCardListComponent,
     ContactDetailsComponent,
-    MaterialElevationDirective
+    MaterialElevationDirective,
+    ScrollingUpButtonComponent
   ],
   imports: [
     BrowserModule,
@@ -50,6 +53,7 @@ import { MaterialElevationDirective } from './shared/directives/material-elevati
     MaterialModule,
     MatFormFieldModule,
     MatIconModule,
+    FlexLayoutModule
   ],
   providers: [
     { provide: MAT_FORM_FIELD_DEFAULT_OPTIONS, useValue: { appearance: 'fill' } },

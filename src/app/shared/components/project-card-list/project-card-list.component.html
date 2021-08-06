@@ -1,8 +1,25 @@
-<div [@scale]="state" [style.flex-direction]="mobileQuery.matches ? 'column' : 'row'" class="container">
+<!-- <div [@scale]="state" [style.flex-direction]="mobileQuery.matches ? 'column' : 'row'" class="container">
 
 <div *ngFor="let project of projectCardArray" class="card">
   <app-project-card
   [projectModel]="project"
   ></app-project-card>
 </div>
+</div> -->
+
+
+<div class="content" [@scale]="state">
+  <div fxLayout="row wrap" fxLayoutGap="16px" grid fxLayoutAlign="center"  fxFlexAlign="center">
+    <!-- <div fxFlex="25%" fxFlex.xs="100%" fxFlex.sm="33%" *ngFor="let num of [1,2,3,4,5,6,7]"> -->
+    <div
+      fxFlex="25%"
+      fxFlex.xs="100%"
+      fxFlex.sm="33%"
+      *ngFor="let project of projectCardArray" class="card"
+    >
+        <app-project-card
+        [projectModel]="project"
+        ></app-project-card>
+    </div>
+  </div>
 </div>

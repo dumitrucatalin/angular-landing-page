@@ -105,8 +105,10 @@ export class ProjectCardListComponent implements OnInit {
     this._mobileQueryListener = () => changeDetectorRef.detectChanges();
     this.mobileQuery.addListener(this._mobileQueryListener);
   }
+  gridColumns = 3;
 
   ngOnInit(): void {
+
     setTimeout(() => {
       this.state == 'normal'
         ? (this.state = 'highlighted')
@@ -123,31 +125,46 @@ export class ProjectCardListComponent implements OnInit {
     let projectCard1 = new ProjectCardModel(
       'assets/img/java-logo.png',
       'Java',
-      'website divetimpera',
-      'A clean, beautiful, responsive and 100% customizable portfolio template for Software',
-      'https://github.com/dumitrucatalin/angular-dashboard'
+      'Chromium browser on Android',
+      'Chromium Android with Conscypt Provider for mutual TLS Auth using remote Cloud Signature Consortium signing',
+      'https://github.com/dumitrucatalin/Chromium-Android-CSC-TLS-MUTUAL-AUTH'
     );
 
     let projectCard2 = new ProjectCardModel(
       'assets/img/react-logo.png',
       'ReactJs',
-      'website divetimpera',
+      'Presentation Website',
       'A clean, beautiful, responsive and 100% customizable portfolio template for Software',
-      "https://github.com/dumitrucatalin/angular-dashboard"
+      "https://github.com/dumitrucatalin/website-divetimpera"
 
       );
 
     let projectCard3 = new ProjectCardModel(
       'assets/img/angular-logo.png',
       'Angular',
-      'website divetimpera',
+      'Presentation Website',
       'A clean, beautiful, responsive and 100% customizable portfolio template for Software',
       'https://github.com/dumitrucatalin/angular-dashboard'
     );
 
+    let projectCard4 = new ProjectCardModel(
+      'assets/img/java-logo.png',
+      'Java',
+      'A Java Security Provider',
+      'Conscrypt for CSC remote signing - A Java Security Provider',
+      'https://bitbucket.org/catalindumitru96/conscrypt-for-csc-tls-mutual-auth/src/master/'
+    );
+
+
     this.projectCardArray.push(projectCard1);
     this.projectCardArray.push(projectCard2);
     this.projectCardArray.push(projectCard3);
+    this.projectCardArray.push(projectCard4);
+    // this.projectCardArray.push(projectCard2);
+    // this.projectCardArray.push(projectCard3);
+    // this.projectCardArray.push(projectCard1);
+    // this.projectCardArray.push(projectCard2);
+    // this.projectCardArray.push(projectCard3);
     // this.projectCardArray.push(projectCard1);
     // this.projectCardArray.push(projectCard2);
     // this.projectCardArray.push(projectCard3);

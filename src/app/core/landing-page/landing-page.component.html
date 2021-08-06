@@ -1,19 +1,21 @@
 <div class="mainComponent">
-    <!-- <img src="assets/landingpage2.jpg" height="100%" width="100%"> -->
+  <!-- <img src="assets/landingpage2.jpg" height="100%" width="100%"> -->
 
-    <app-social-media-icons></app-social-media-icons>
-    <app-details-card></app-details-card>
+  <app-social-media-icons></app-social-media-icons>
+  <app-details-card></app-details-card>
 
-    <p [style.fontSize]="mobileQuery.matches ? '4.5vw' : '3vw'"
-        [style.lineHeight]="mobileQuery.matches ? '1vw' : '1vw'"
-        class="centeredText">
-        What We Do?
-    </p>
-    <app-mobile-details></app-mobile-details>
-    <app-cloud-architecture-details></app-cloud-architecture-details>
-    <!-- <app-details-card></app-details-card>
+  <p
+    [style.fontSize]="mobileQuery.matches ? '4.5vw' : '3vw'"
+    [style.lineHeight]="mobileQuery.matches ? '1vw' : '1vw'"
+    class="centeredText"
+  >
+    What We Do?
+  </p>
+  <app-mobile-details></app-mobile-details>
+  <app-cloud-architecture-details></app-cloud-architecture-details>
+  <!-- <app-details-card></app-details-card>
 
     <app-details-card></app-details-card> -->
-
-
 </div>
+
+<app-scrolling-up-button></app-scrolling-up-button>

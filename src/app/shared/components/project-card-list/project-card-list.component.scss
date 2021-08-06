@@ -1,11 +1,26 @@
-.container{
-    display: flex;
-    // min-height: min-content;
+// .container{
+//     display: flex;
+//     // min-height: min-content;
+// }
+
+// .card {
+//   // flex: 1;
+//   // display: flex;
+//   // overflow: auto;
+//   flex-shrink: 1
+// }
+
+
+.content {
+  // padding: 16px;
+  justify-content: space-between;
 }
 
-.card {
-  // flex: 1;
-  // display: flex;
-  // overflow: auto;
-  flex-shrink: 1
+.content > mat-card {
+  // margin-bottom: 16px;
+}
+
+.column-label {
+  margin-right: 8px;
+  font-size: 1rem;
 }

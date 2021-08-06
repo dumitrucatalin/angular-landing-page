@@ -6,17 +6,16 @@
 
 //   }
 
-  .example-header-image {
-    background-image: url('https://material.angular.io/assets/img/examples/shiba1.jpg');
-    background-size: cover;
-  }
+.example-header-image {
+  background-image: url("https://material.angular.io/assets/img/examples/shiba1.jpg");
+  background-size: cover;
+}
 
-
-  mat-card {
-      margin: 10px;
-      cursor: pointer;
-       background-color: #fbf7ff;
-     }
+mat-card {
+  margin: 10px;
+  cursor: pointer;
+  background-color: #fbf7ff;
+}
 
 // .example-card  :hover {
 //    background-color: #e3d4f7;
@@ -25,4 +24,3 @@
 // .mat-card :hover {
 //   background-color: #e3d4f7;
 // }
-

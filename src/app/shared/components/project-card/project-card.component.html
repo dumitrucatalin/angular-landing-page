@@ -3,12 +3,10 @@
     <mat-card-header>
       <div mat-card-avatar class="example-header-image"
       [ngStyle]="{'background-image': 'url(' + projectModel.technologyImgUrl + ')'}">
-            <!-- <img mat-card-image src="https://material.angular.io/assets/img/examples/shiba2.jpg"> -->
       </div>
       <mat-card-title>{{projectModel.projectName}}</mat-card-title>
       <mat-card-subtitle>{{projectModel.technologyName}}</mat-card-subtitle>
     </mat-card-header>
-    <!-- <img mat-card-image src="https://material.angular.io/assets/img/examples/shiba2.jpg" alt="Photo of a Shiba Inu"> -->
     <mat-card-content>
       <p>
        {{projectModel.projectDescryption}}
@@ -20,13 +18,3 @@
     </mat-card-actions> -->
   </mat-card>
 
-  <!-- <mat-card appMaterialElevation>
-    <mat-card-header>
-      <mat-card-title>Card Title</mat-card-title>
-    </mat-card-header>
-    <mat-card-content>
-      <p>
-        This card changes elevation when you hover over it!
-      </p>
-    </mat-card-content>
-  </mat-card> -->
